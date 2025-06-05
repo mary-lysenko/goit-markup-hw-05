@@ -469,5 +469,75 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal-close">
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="modal-imput-text">Name</label>
+            <div class="modal-imput-cover">
+              <input
+                type="text"
+                class="modal-imput modal-item"
+                name="user-name"
+                required
+                id="user-name"
+              />
+              <svg class="modal-imput-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-contact"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label for="user-phone" class="modal-imput-text">Phone</label>
+            <div class="modal-imput-cover">
+              <input
+                type="tel"
+                class="modal-imput modal-item"
+                name="user-phone"
+                required
+                id="user-phone"
+              />
+              <svg class="modal-imput-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label for="user-email" class="modal-imput-text">Email</label>
+            <div class="modal-imput-cover">
+              <input
+                type="email"
+                class="modal-imput modal-item"
+                name="user-email"
+                required
+                id="user-email"
+              />
+              <svg class="modal-imput-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-letter"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-text" class="modal-imput-text">Comment</label>
+            <textarea
+              class="modal-textarea modal-item"
+              name="user-text"
+              id="user-text"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <button type="submit" class="modal-btn">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
