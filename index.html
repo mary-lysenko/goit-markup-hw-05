@@ -60,7 +60,7 @@
       <section class="hero-page">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-title-btn" type="button">Order Service</button>
+          <button class="btn hero-title-btn" type="button">Order Service</button>
         </div>
       </section>
 
@@ -467,10 +467,22 @@
             </li>
           </ul>
         </div>
+        
+          <form class="fotter-form">
+            <label>
+            <input type="email" name="footer-email" id="footer-subscribe" placeholder="E-mail" class="footer-imput"/>
+          </form>
+                </label>
+                <div class="footer-subscribe-btn">
+                <button type="submit" class="btn footer-btn">Subscribe</button>
+                <svg class="footer-icon-send" width="24" height="20">
+          <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+        </div>
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg class="modal-close-icon" width="8" height="8">
@@ -535,9 +547,26 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <button type="submit" class="modal-btn">Send</button>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              class="modal-check visually-hidden"
+              value="true"
+            />
+            <label for="policy" class="check-text"
+              ><span class="check-element"
+                ><svg class="icon-check" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use></svg></span
+              >I accept the terms and conditions of the
+              <a href="">Privacy Policy</a></label
+            >
+          </div>
+          <button type="submit" class="btn modal-btn">Send</button>
         </form>
       </div>
     </div>
   </body>
 </html>
+
